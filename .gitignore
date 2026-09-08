@@ -1,18 +1,15 @@
 ```
-# Dependencies
-node_modules/
-venv/
-.venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 env/
+venv/
 .venv/
-venv.bak/
 pip-log.txt
-pip-selfcheck.json
+pip-delete-this-directory.txt
 .tox/
 .coverage
 .coverage.*
@@ -21,59 +18,24 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-*.tmp
-*.swp
-*.swo
 .DS_Store
 Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Local development settings
 .env
 .env.local
+.env.dev
+.env.production
+.env.staging
+.env.test
 .env.*
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnp/
-.pnp.js
-node_modules/
-/.pnp.*
-.pnp.*
-.next/
-out/
 
 # Docker
 .dockerenv
 .DS_Store
-.DS_Store?
-._.DS_Store
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
 # IDE
 .vscode/
@@ -81,19 +43,25 @@ Thumbs.db
 *.swp
 *.swo
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Build artifacts
+dist/
+build/
+*.egg-info/
+target/
+.gradle/
 
-# Coverage
-coverage/
+# Testing
+.pytest_cache/
+.mypy_cache/
 htmlcov/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+coverage/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 ```
