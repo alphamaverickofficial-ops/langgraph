@@ -1,7 +1,10 @@
 from typing import Dict, Any, List
 import logging
 from datetime import datetime
-from .base_service import BaseAIService
+import sys
+
+sys.path.insert(0, '/workspace/agentic-ai-gateway/backend')
+from services.base_service import BaseAIService
 
 logger = logging.getLogger(__name__)
 
